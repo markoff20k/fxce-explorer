@@ -95,7 +95,7 @@ const Address: React.FC<IProps> = ({ match, history }) => {
       <AddressView
         address={address}
         txCount={transactionCount ? hexToNumber(transactionCount) : 0}
-        balance={unit.fromWei(balance || 0, "ether")}
+        balance={unit.fromWei(balance || 0, "FXCE")}
         code={code}
       />
       <AddressTransactions
